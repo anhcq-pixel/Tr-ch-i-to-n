@@ -1,0 +1,41 @@
+@import "tailwindcss";
+@import "katex/dist/katex.min.css";
+
+/* KaTeX Vietnamese Math Textbook Enhancements */
+.katex {
+  font-size: 1.18em;
+  line-height: 1.45;
+  text-rendering: geometricPrecision;
+}
+
+/* Ensure fraction bar is clear, prominent and never disappears on projectors */
+.katex .frac-line {
+  border-bottom-width: 0.09em !important;
+  min-height: 2px !important;
+}
+
+/* Ensure exponents and subscripts have clear spacing */
+.katex .msupsub {
+  font-size: 0.85em;
+}
+
+/* Large and Jumbo Math classes */
+.math-size-sm .katex {
+  font-size: 1.05em;
+}
+
+.math-size-base .katex {
+  font-size: 1.2em;
+}
+
+.math-size-lg .katex {
+  font-size: 1.45em;
+}
+
+.math-size-xl .katex {
+  font-size: 1.75em;
+}
+
+.math-size-2xl .katex {
+  font-size: 2.15em;
+}
